@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Αρχιτεκτονικό Γραφείο Βαϊλάκης και Συνεργάτες</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- PREFETCH  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- PREFETCH  -->
+
+    <!-- BOOTSTRAP  -->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- BOOTSTRAP  -->
+
+    <!-- FANCYBOX  -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FANCYBOX  -->
+
+    <!-- MY STYLE -->
+    <link rel="preload" as="style" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- MY STYLE -->
+
+
+    <!-- SCRIPTS PRELOAD  -->
+    <!-- JQUERY  -->
+    <link rel="preload" as="script" href="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    <!-- BOOTSTRAP  -->
+    <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    <!-- FANCYBOX  -->
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- MY SCRIPT  -->
+    <link rel="preload" as="script" href="./scripts/scripts.js">
+    <!-- SCRIPTS PRELOAD  -->
+
+</head>
+<body>
+    
+    <!-- HEADER  -->
+    <header class="header fixed-top">
+        <div class="d-lg-flex justify-content-between align-items-center text-center position-relative">
+            <div class="left-header">
+                <div class="menu-toggle" id="hamburger"> 
+                    <span></span>
+                </div>
+                <!-- <div class="overlay"></div> -->
+                <a href="index.html" class="brand">
+                    <img src="./images/Logo vailakis horizontal GR.png" alt="Βαϊλάκης κ Συνεργάτες Αρχιτεκτονικό Γραφείο" class="img-fluid">
+                </a>
+                <div class="header-widgets d-inline-flex align-items-center ms-5">
+                    <div class="languagesDrop dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            EL
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">
+                                EN 
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="right-header">
+                <nav>
+                    <ul>
+                        <li>
+                            <label for="btn-1" class="visually-hidden">ΓΡΑΦΕΙΟ</label>
+                            <a href="grafeio.html">ΓΡΑΦΕΙΟ</a> 
+                            <input type="checkbox" id="btn-1">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">ΠΡΟΦΙΛ</a>
+                                </li>
+                                <li>
+                                    <a href="#">ΥΠΗΡΕΣΙΕΣ</a>
+                                </li>
+                                <li>
+                                    <a href="#">ΦΙΛΟΣΟΦΙΑ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-2" class="visually-hidden">ΓΡΑΦΕΙΟ</label>
+                            <a href="erga.html">ΕΡΓΑ</a>
+                            <input type="checkbox" id="btn-2"> 
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">ΚΑΤΟΙΚΙΕΣ</a>
+                                </li>
+                                <li>
+                                    <a href="#">ΕΠΑΓΓΕΛΜΑΤΙΚΟΙ ΧΩΡΟΙ</a>
+                                </li>
+                                <li>
+                                    <a href="#">ΞΕΝΟΔΟΧΕΙΑ - ΤΟΥΡΙΣΜΟΣ</a>
+                                </li>
+                                <li>
+                                    <a href="#">ΔΗΜΟΣΙΑ ΕΡΓΑ</a>
+                                </li>
+                                <li>
+                                    <a href="#">ΔΗΜΟΣΙΟΙ ΧΩΡΟΙ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-3" class="visually-hidden">ΓΡΑΦΕΙΟ</label>
+                            <a href="grafeio.html">ΔΗΜΟΣΙΕΥΣΕΙΣ</a> 
+                            <input type="checkbox" id="btn-3">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">ΒΙΒΛΙΑ</a>
+                                </li>
+                                <li>
+                                    <a href="#">ΠΕΡΙΟΔΙΚΑ</a>
+                                </li>
+                                <li>
+                                    <a href="#">ΕΚΘΕΣΕΙΣ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="active">Επικοινωνια</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER  -->
+
+    <!-- START OF BREADCRUMBS  -->
+    <div class="breadcrumbs">
+        <div class="col-10 col-xl-8 m-auto">
+            <ul class="list-unstyled d-inline-flex flex-wrap justify-content-center">
+                <li><a href="index.html">ΑΡΧΙΚΗ</a></li>
+                <li class="active">ΕΠΙΚΟΙΝΩΝΙΑ</li>
+            </ul>
+        </div>
+    </div>
+    <!-- END OF BREADCRUMBS  -->
+
+    <!--START WELCOME TEXT  -->
+    <div class="marginTop">
+        <div class="col-10 col-xl-8 m-auto text-start">
+            <h1>Επικοινωνια</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, quos.</p>
+        </div>
+    </div>
+    <!--END WELCOME TEXT  -->
+  
+    <!--START WELCOME TEXT  -->
+    <div class="marginTop">
+        <div class="col-10 col-xxl-8 m-auto text-center">
+            
+            <div class="row g-0">
+                <div class="col-xl-6 map-container">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=13YohLB1PbMlmVFAaQE5Gxy9ORxw&hl=el&ehbc=2E312F" style="width: 100%; height: 100%;"></iframe>
+                </div>
+                <div class="col-xl-6 py-4 px-md-5 ps-xl-5">
+                    <h2>ΦΟΡΜΑ ΕΠΙΚΟΝΩΝΙΑΣ</h2>
+                    <form class="contact-form text-start mt-5">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="mb-3 col-12 col-xxl-6">
+                                <label for="first-name" class="form-label">Όνομα <span>*</span></label>
+                                <input type="text" class="form-control" id="first-name" required>
+                            </div>
+                            <div class="mb-3 col-12 col-xxl-6">
+                                <label for="last-name" class="form-label">Επώνυμο <span>*</span></label>
+                                <input type="text" class="form-control" id="last-name" required>
+                            </div>
+                            <div class="mb-3 col-12 col-xxl-6">
+                                <label for="last-name" class="form-label">Τηλέφωνο <span>*</span></label>
+                                <input type="text" class="form-control" id="last-name" required>
+                            </div>
+                            <div class="mb-3 col-12 col-xxl-6">
+                              <label for="email" class="form-label">Email <span>*</span></label>
+                              <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3 col-12">
+                                <label class="form-label">Πώς μας βρήκατε;</label>
+                                <select class="form-select form-control" aria-label="select vrikate">
+                                    <option selected disabled>Επιλογή</option>
+                                    <option>Από αναφορά σε περιοδικό</option>
+                                    <option>Από κάποιο banner</option>
+                                    <option>Newsletter</option>
+                                    <option>Μπροσούρα</option>
+                                    <option>Από κάποια μηχανή αναζήτησης</option>
+                                    <option>Από κάποιο γνωστό</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 col-12">
+                                <label class="form-label">Παρακαλoύμε διατυπώστε συνοπτικά τις απορίες - ερωτήσεις σας</label>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                           
+                        </div>
+                        <p>Τα πεδία με "<span>*</span>" είναι υποχρεωτικά.</p>
+                        <button type="submit" class="submitBtn mb-3">αποστολη</button>
+                        <p>Σας γνωστοποιούμε ότι τα στοιχεία σας παραμένουν στο γραφείο μας για αποκλειστική χρήση, με σκοπό την όσο δυνατόν καλύτερη εξυπηρέτηση σας και σε καμία περίπτωση δεν γνωστοποιούνται σε τρίτους.</p>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END WELCOME TEXT  -->
+
+    <!-- START BOTTOM MENU  -->
+    <div class="bottomMenu marginTop">
+        <div class="col-10 m-auto text-center">
+            <ul class="list-unstyled d-inline-flex flex-wrap justify-content-center">
+                <li><a href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                <li><a href="#">ΠΕΛΑΤΟΛΟΓΙΟ</a></li>
+                <li><a href="#">ΠΟΛΙΤΙΚΗ ΑΠΟΡΡΗΤΟΥ</a></li>
+                <li><a href="#">COOKIE POLICY</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- END BOTTOM MENU  -->
+
+    <!-- START FOOTER  -->
+    <footer>
+    <div class="col-10 m-auto">
+        <div class="row g-0">
+                <div class="col-lg-6 mb-5 mb-lg-0 px-lg-2">
+                    <div class="footer-contact">
+                        <h2>
+                            ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ
+                        </h2>
+                        <p class="mt-3">
+                            Αρχιτεκτονικό Γραφείο<br>
+                            Σ. Γιαμαλάκη 50, "Iraklio Center"<br>
+                            Ηράκλειο, 712 02, Κρήτη <br>
+                            Τηλ/Φαξ: <a href="tel:+302810222171">+30 2810 222 171</a><br>
+                            Email: <a href="#">info@vailakis.gr</a>
+                        </p>
+                    </div>
+                    <div class="footer-social mt-5">
+                        <h2>SOCIAL MEDIA</h2>
+                        <ul class="list-unstyled d-inline-flex mt-3">
+                            <li><a href="https://www.facebook.com/VailakisArchitects" aria-label="facebook"><img src="./images/facebook.svg" alt="facebook"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-lg-2">
+                <h2>NEWSLETTER</h2>
+                <p>Κάντε εγγραφή στο ενημερωτικό μας δελτίο, για να μαθαίνετε πρώτοι τα νέα και τις προσφορές.</p>
+                <form class="row g-3 mt-3 newsletterForm">
+                        <div class="col-12 col-sm-8">
+                            <label for="newsletterEmail" class="visually-hidden">Email</label>
+                            <input id="newsletterEmail" type="email" class="form-control" placeholder="Email" aria-label="Email">
+                        </div>
+                    <div class="col-12 col-sm-4">
+                        <button type="submit" class="submitBtn">εγγραφη</button>
+                    </div>
+                </form>
+                </div>
+        </div>
+        <div class="copyright mt-5">
+            <p>© Νikolaos Vailakis & Zacharias Vailakis. All rights reserved | Designed and Developed by <a href="https://www.eyewide.gr/" target="_blank">EyeWide - Internet Marketing</a></p>
+        </div>
+    </div>
+    </footer>
+    <!-- END FOOTER  -->
+
+
+    <!-- CDN SCRIPTS -->
+    <!-- JQUERY CDN  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- FANCYBOX  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JQUERY CDN  -->
+
+
+    <!-- MY SCRIPTS  -->
+    <script src="./scripts/scripts.js"></script>
+    <!-- MY SCRIPTS  -->
+</body>
+</html>
