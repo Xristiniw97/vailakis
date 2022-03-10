@@ -242,6 +242,24 @@
     </footer>
     <!-- END FOOTER  -->
 
+    <!-- START OF MODAL  -->
+    <div class="modal" tabindex="-1" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <h2>Βαϊλακης &amp; Συνεργατες <br>Αρχιτεκτονικο Γραφειο</h2>
+                <p class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores reiciendis harum quos dolorum et omnis consequatur excepturi ex quidem voluptas.</p>
+                <a href="#" class="mainLink">EXPLORE</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- END OF MODAL  -->
+    
+
 
     <!-- CDN SCRIPTS -->
     <!-- JQUERY CDN  -->
@@ -256,5 +274,15 @@
     <!-- MY SCRIPTS  -->
     <script src="./scripts/scripts.js"></script>
     <!-- MY SCRIPTS  -->
+
+    <script>
+        // START OF MODAL  
+        $(document).ready(function(){
+            setTimeout(function() {
+                $('#myModal').modal('show');
+            }, 1000);
+        });    
+        // END OF MODAL      
+    </script>
 </body>
 </html>
