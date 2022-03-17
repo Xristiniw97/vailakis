@@ -91,11 +91,11 @@ h1, .h1, h2, .h2 {
 }
 
 h1, .h1 {
-  font-size: 42px;
+  font-size: 50px;
 }
 
 h2, .h2 {
-  font-size: 32px;
+  font-size: 35px;
 }
 
 @media screen and (max-width: 991px) {
@@ -201,16 +201,10 @@ nav input {
   width: 100%;
   padding: 5px 80px;
   border-radius: 0px;
-  background: var(--mauro-light);
+  background: var(--mauro);
   opacity: 0;
   visibility: hidden;
   transition: top .3s;
-}
-
-.filters-project {
-  padding: 5px 80px;
-  border-radius: 0px;
-  background: var(--mauro);
 }
 
 .header ul ul li {
@@ -226,10 +220,6 @@ nav input {
   line-height: 1.5;
   font-size: 16px;
   color: var(--aspro);
-}
-
-.header ul ul li a::after {
-  content: unset;
 }
 
 .header ul ul li a:hover, .header ul ul li a.active {
@@ -323,7 +313,7 @@ nav input {
 }
 
 .brand img {
-  width: 220px;
+  width: 200px;
 }
 
 .overlay {
@@ -552,7 +542,7 @@ nav input {
   display: block;
   letter-spacing: 2px;
   padding: 5px 25px;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--aspro);
@@ -560,7 +550,7 @@ nav input {
 
 @media screen and (max-width: 1199px) {
   .contentOverSlider a {
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 
@@ -572,7 +562,7 @@ nav input {
     margin-top: 73px;
   }
   .contentOverSlider a {
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 
@@ -581,7 +571,7 @@ nav input {
     height: 350px;
   }
   .contentOverSlider a {
-    font-size: 28px;
+    font-size: 30px;
   }
   .carousel {
     margin-top: 64px;
@@ -695,10 +685,6 @@ footer a:hover {
 /** BREADCRUMBS **/
 .breadcrumbs {
   margin-top: 150px;
-}
-
-.ergabreadcrumbs {
-  margin-top: 200px;
 }
 
 .breadcrumbs ul li a {
@@ -925,17 +911,16 @@ footer a:hover {
   font-weight: 500;
 }
 
-.map-container iframe {
-  height: 400px !important;
+@media screen and (max-width: 1399px) {
+  .map-container iframe {
+    height: 700px !important;
+  }
 }
 
-.contact-info a {
-  color: var(--mauro);
-}
-
-.contact-info a:hover {
-  color: var(--mauro);
-  text-decoration: underline;
+@media screen and (max-width: 1199px) {
+  .map-container iframe {
+    height: 400px !important;
+  }
 }
 
 /** CONTACT PAGE **/
@@ -954,9 +939,4 @@ footer a:hover {
 }
 
 /** MODAL **/
-.active-erga .dropdown-menu {
-  top: 100px;
-  opacity: 1;
-  visibility: visible;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stylecss.map */
